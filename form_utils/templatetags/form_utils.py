@@ -5,10 +5,11 @@ templatetags for django-form-utils
 """
 from __future__ import unicode_literals
 
+import six
+
 from django import forms
 from django import template
 from django.template.loader import render_to_string
-from django.utils import six
 
 from ..forms import BetterForm, BetterModelForm
 from ..utils import select_template_from_string

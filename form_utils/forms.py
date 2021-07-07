@@ -8,12 +8,14 @@ Time-stamp: <2010-04-28 02:57:16 carljm forms.py>
 from __future__ import unicode_literals
 from copy import deepcopy
 
+import six
+
 from django import forms
 try:
     from django.forms.utils import flatatt, ErrorDict
 except ImportError: # Django < 1.9 compatibility
     from django.forms.util import flatatt, ErrorDict
-from django.utils import six
+
 from django.utils.safestring import mark_safe
 
 
